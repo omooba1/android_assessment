@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Class App</string>
+    <string name="choose_any_service_you_need">Choose any service you need!</string>
+    <string name="car_rental">Car Rental</string>
+    <string name="buy_amp_sell"><![CDATA[Buy & Sell]]></string>
+    <string name="repair">Repair</string>
+    <string name="accessories">Accessories</string>
+    <string name="services">Services</string>
+    <string name="todo" tools:ignore="DuplicateDefinition">TODO</string>
+    <string name="call_us">Call Us</string>
+    <string name="contact_us_now">Contact Us Now</string>
+
+</resources>

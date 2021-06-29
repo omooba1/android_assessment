@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ProductsActivity">
+
+    <RelativeLayout
+        android:layout_width="387dp"
+        android:layout_height="706dp"
+        android:layout_gravity="center"
+        android:layout_margin="34sp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/services"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="130sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginEnd="130sp"
+            android:layout_marginBottom="630sp"
+            android:text="@string/services"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/anyServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="110sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="510sp"
+            android:text="@string/choose_any_service_you_need"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginBottom="370sp">
+
+            <ImageView
+                android:id="@+id/carRental"
+                android:layout_width="200sp"
+                android:layout_height="400sp"
+                android:clickable="true"
+                android:contentDescription="@string/todo"
+                android:focusable="true"
+                android:src="@drawable/ic_baseline_directions_car_24" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/carRent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="230sp"
+            android:layout_marginBottom="350sp"
+            android:text="@string/car_rental"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="370sp">
+
+            <ImageView
+                android:id="@+id/buySell"
+                android:layout_width="200sp"
+                android:layout_height="400sp"
+                android:clickable="true"
+                android:contentDescription="@string/todo"
+                android:focusable="true"
+                android:src="@drawable/ic_buysell" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/buySellText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="230sp"
+            android:layout_marginEnd="60sp"
+            android:layout_marginBottom="340sp"
+            android:text="@string/buy_amp_sell"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="380dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginBottom="200sp">
+
+            <ImageView
+                android:id="@+id/rePairImage"
+                android:layout_width="200sp"
+                android:layout_height="400sp"
+                android:clickable="true"
+                android:contentDescription="@string/todo"
+                android:focusable="true"
+                android:src="@drawable/ic_preferences_system" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/rePair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="250sp"
+            android:layout_marginBottom="180sp"
+            android:text="@string/repair"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="380sp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="200sp">
+
+            <ImageView
+                android:id="@+id/accessoriesImage"
+                android:layout_width="200sp"
+                android:layout_height="400sp"
+                android:clickable="true"
+                android:contentDescription="@string/todo"
+                android:focusable="true"
+                android:src="@drawable/ic_accessories" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/accessoriesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="230sp"
+            android:layout_marginEnd="50sp"
+            android:layout_marginBottom="180sp"
+            android:text="@string/accessories"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/continueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="50sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginEnd="50sp"
+            android:layout_marginBottom="90sp"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
