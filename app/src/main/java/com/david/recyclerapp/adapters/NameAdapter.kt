@@ -6,16 +6,17 @@ import androidx.recyclerview.widget.RecyclerView
 import com.david.recyclerapp.databinding.NameItemBinding
 import com.david.recyclerapp.models.Name
 
-class NameAdapter(val names: List<Name>, var clickListener: OnNameItemClickListener) : RecyclerView.Adapter<NameAdapter.NameViewHolder>() {
+class NameAdapter(val names: List<Name>, var clickListener: OnNameItemClickListener) :
+    RecyclerView.Adapter<NameAdapter.NameViewHolder>() {
 
-    class NameViewHolder(var binding: NameItemBinding) : RecyclerView.ViewHolder(binding.root){
-        fun bind(name: Name){
+    class NameViewHolder(var binding: NameItemBinding) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(name: Name) {
             binding.profilePicture.setImageResource(name.profile)
             binding.firstName.text = name.first
             binding.lastName.text = name.last
         }
 
-        fun initialize(name: Name, action:OnNameItemClickListener){
+        fun initialize(name: Name, action: OnNameItemClickListener) {
             binding.profilePicture.setImageResource(name.profile)
             binding.firstName.text = name.first
             binding.lastName.text = name.last
@@ -28,7 +29,7 @@ class NameAdapter(val names: List<Name>, var clickListener: OnNameItemClickListe
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NameViewHolder {
-      val binding = NameItemBinding.inflate(LayoutInflater.from(parent.context))
+        val binding = NameItemBinding.inflate(LayoutInflater.from(parent.context))
         return NameViewHolder(binding)
     }
 
@@ -42,9 +43,8 @@ class NameAdapter(val names: List<Name>, var clickListener: OnNameItemClickListe
         return names.size
     }
 
-
 }
 
-interface OnNameItemClickListener{
+interface OnNameItemClickListener {
     fun onItemClick(name: Name, position: Int)
 }

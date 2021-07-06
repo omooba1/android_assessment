@@ -15,11 +15,9 @@ class ProfileActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.apply {
-            profilePicture1.setImageResource(intent.getStringExtra("profilePicture")!!.toInt())
+            profilePicture1.setImageResource(intent.getStringExtra("ProfilePicture")!!.toInt())
             firstName1.text = intent.getStringExtra("firstName")
             lastName1.text = intent.getStringExtra("lastName")
-
-
         }
     }
 }

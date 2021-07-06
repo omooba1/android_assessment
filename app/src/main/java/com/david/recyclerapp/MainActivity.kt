@@ -147,7 +147,7 @@ class MainActivity : AppCompatActivity(), OnNameItemClickListener {
     }
 
     override fun onItemClick(name: Name, position: Int) {
-       val intent = Intent(this,ProfileActivity::class.java)
+        val intent = Intent(this, ProfileActivity::class.java)
         intent.putExtra("ProfilePicture", name.profile.toString())
         intent.putExtra("firstName", name.first)
         intent.putExtra("lastName", name.last)
