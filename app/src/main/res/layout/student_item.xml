@@ -6,11 +6,12 @@
     android:layout_height="wrap_content"
     android:padding="10dp">
 
+
     <TextView
-        android:id="@+id/nameView"
+        android:id="@+id/classView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
         android:text="TextView"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,16 +20,25 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/priceView"
+        android:id="@+id/nameView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/classView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/classView"
+        app:layout_constraintTop_toBottomOf="@+id/classView" />
+
+    <TextView
+        android:id="@+id/seatView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="TextView"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/nameView"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/nameView"
         app:layout_constraintTop_toBottomOf="@+id/nameView" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

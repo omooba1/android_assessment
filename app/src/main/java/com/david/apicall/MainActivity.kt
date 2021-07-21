@@ -1,5 +1,6 @@
 package com.david.apicall
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
@@ -33,6 +34,11 @@ class MainActivity : AppCompatActivity() {
                 itemAdapter.items = items
                 itemAdapter.notifyDataSetChanged()
             })
+        }
+
+        binding.studentPageButton.setOnClickListener {
+            val intent = Intent(this,StudentActivity::class.java)
+            startActivity(intent)
         }
     }
 }

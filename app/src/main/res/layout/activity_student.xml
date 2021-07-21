@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".StudentActivity">
+
+
+    <EditText
+        android:id="@+id/classText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Class"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/classText"
+        app:layout_constraintStart_toStartOf="@+id/classText"
+        app:layout_constraintTop_toBottomOf="@+id/classText" />
+
+    <EditText
+        android:id="@+id/seatText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Seat Number"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/nameText"
+        app:layout_constraintStart_toStartOf="@+id/nameText"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Add Student"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/seatText"
+        app:layout_constraintStart_toStartOf="@+id/seatText"
+        app:layout_constraintTop_toBottomOf="@+id/seatText" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/studentRecycler"
+        android:layout_width="376dp"
+        android:layout_height="482dp"
+        app:layout_constraintEnd_toEndOf="@+id/seatText"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/seatText"
+        app:layout_constraintTop_toBottomOf="@+id/addButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
